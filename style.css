@@ -1,0 +1,133 @@
+.container.main{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    position: absolute;
+    display:inline-block;
+    top: 40px;
+    left: 5px;
+}
+.box0 {
+    position: relative;
+    height: 45px;
+    width: 1500px;
+    background-color: black;
+}
+h2 {
+    color: white;
+    margin-left: 5%;
+}
+.box.box1{
+    position: relative;
+    height: 500px;
+    width: 225px;
+}
+.box.box2 {
+    position: absolute;
+    margin-left: 300px;
+    height: 500px;
+    width: 250px;
+    top: 85px;
+}
+.box.box3 {
+    position: absolute;
+    margin-left: 580px;
+    height: 500px;
+    width: 225px;
+    top: 80px;
+}
+#selectformat {
+    position: relative;
+    height: 400px;
+    width: 250px;
+    background-color: rgb(235, 235, 235);
+}
+#selectsource {
+    position: relative;
+    height: 400px;
+    width: 225px;
+    background-color:  rgb(235, 235, 235);
+}
+#visualizer {
+    position: relative;
+    height: 680px;
+    width: 800px;
+    background-color:  rgb(235, 235, 235);
+}
+#customers {
+    /* height: 10px;
+    width: 20px; */
+    background-color: grey;
+    margin-top: 20px;
+}
+#orders {
+    background-color: grey;
+    margin-top: 10px;
+}
+#vcustomers {
+
+    width: 130px;
+    height: 66px;
+    background-color:  rgb(207, 207, 207);
+    margin-top: 10px;
+    border: 2px dashed black;
+}
+#vorders {
+    background-color: rgb(207, 207, 207);
+    margin-top: 30px;
+    width: 130px;
+    height: 66px;
+    border: 2px dashed black;
+}
+#map {
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    background-color: rgb(8, 8, 119);
+    color: white;
+    top: 600px;
+    left: 350px;
+    text-align: center;
+}
+.operations {
+    margin-left: 300px;
+}
+#join, #tranform, #output{
+    background-color: rgb(207, 207, 207);
+    margin-top: 30px;
+    width: 130px;
+    height: 40px;
+    border: 2px dashed black;
+    cursor: pointer;
+}
+#joinclick {
+    background-color: rgb(207, 207, 207);
+    margin-top: 30px;
+    width: 150px;
+    height: 100px;
+    border: 1px  black;
+    margin-left: 500px;
+    margin-top: -250px;
+
+}
+#tranformclick {
+    background-color: rgb(207, 207, 207);
+    margin-top: 30px;
+    width: 150px;
+    height: 100px;
+    border: 1px  black;
+    margin-left: 500px;
+    margin-top: -250px;
+
+}
+#outputclick {
+    background-color: rgb(207, 207, 207);
+    margin-top: 30px;
+    width: 150px;
+    height: 100px;
+    border: 1px  black;
+    margin-left: 500px;
+    margin-top: -250px;
+
+}

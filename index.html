@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Analyzer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container main">
+        <div class="box0"><h2>DATA Analyzer</h2></div>
+        <div class="box box1">1.Select Format
+            <div id="selectformat"><input type="checkbox" name="mysql" value=""> MySQL<br>
+                <form>
+                        <br>
+                        <input type="text" name="root" placeholder="root"><br>
+                        <br>
+                        <input type="password" name="password" placeholder="password">
+                        <br>
+                        <input type="text" name="localhost" placeholder="localhost"><br>
+                        <br>
+                        <button type="submit" form="form1" value="Submit">Submit</button>
+                      </form>
+                      <input type="checkbox" name="csv" value=""> CSV
+            </div>
+        </div>
+        <div class="box box2">2.Select Source
+            <div id="selectsource"><span>MySQL</span>  <span>CSV</span><br>
+                <div id="customers" draggable="true" ondragstart="drag(event)">Customers</div>
+                <div id="orders" draggable="true" ondragstart="drag(event)">Orders</div>
+                <br>
+                <input type="checkbox" name="" value=""> OrderID <br>
+                <input type="checkbox" name="" value=""> CustomerID <br>
+                <input type="checkbox" name="" value=""> EmployerID
+            </div>
+        </div>
+        <div class="box box3">Visualizer
+            <div id="visualizer">
+                <div id="vcustomers" ondrop="drop(event)" ondragover="allowDrop(event)">Customers</div>
+                <div id="vorders" ondrop="drop(event)" ondragover="allowDrop(event)">Orders</div>
+                <div class="operations">
+                    <div id="join">Join</div>
+                    <div id="tranform">Transform</div>
+                    <div id="output">Output File Type</div>
+                </div>
+                <!-- <div id="joinclick">
+                    Verify the primary key for joining
+                </div> -->
+                <div id="map">Run the Maping</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
