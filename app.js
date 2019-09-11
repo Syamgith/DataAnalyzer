@@ -14,7 +14,12 @@ function allowDrop(ev) {
   }
   $(document).ready(function(){
     let joinHtml = '<div id="joinclick">' +
-    'Verify the primary key for joining' + '</div>'
+    'Verify the primary key for joining'
+    +
+    '<select>' +
+          '<option>' + 'CustomerId' +'</option>' +
+    '</select>' +
+    '</div>'
    
     $("#join").click(function(){
         $("#joinclick").remove();
@@ -26,7 +31,12 @@ function allowDrop(ev) {
 
   $(document).ready(function(){
     let tranformHtml = '<div id="tranformclick">' +
-    'Which transformation you want to apply?' + '</div>'
+    'Which transformation you want to apply?'
+    +
+    '<select>' +
+          '<option>' + 'Accending' +'</option>' +
+    '</select>' +
+     '</div>'
    
     $("#tranform").click(function(){
         $("#joinclick").remove();
@@ -38,7 +48,11 @@ function allowDrop(ev) {
   
   $(document).ready(function(){
     let outputHtml = '<div id="outputclick">' +
-    'Select output file type' + '</div>'
+    'Select output file type' + 
+    
+    '<select>' +
+          '<option>' + 'CSV' +'</option>' +
+    '</select>' +'</div>'
    
     $("#output").click(function(){
         $("#joinclick").remove();
