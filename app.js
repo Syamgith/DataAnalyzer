@@ -109,3 +109,19 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+//csv on click
+$(document).ready(function(){
+  $("#cs").click(function(){
+
+      $("#innermysql").hide();
+    
+  });
+});
+//mysql onclick
+$(document).ready(function(){
+  $("#ms").click(function(){
+
+      $("#innermysql").show();
+    
+  });
+});

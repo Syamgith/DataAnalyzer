@@ -22,34 +22,28 @@
             </div>
         </div>
         <div class="box box2">2.Select Source
-            <div id="selectsource"><span>MySQL</span>  <span>CSV</span><br>
+            <div id="selectsource"><span id="ms">MySQL  </span>  <span id="cs">CSV</span><br>
+                <div id="innermysql">
+                    <button class="collapsible">information_schema</button>
+                    <div class="content">
+                    <p></p>
+                    </div>
 
-                <button class="collapsible">information_schema</button>
-                <div class="content">
-                <p></p>
+                    <button class="collapsible">learn</button>
+                    <div class="content">
+                    <p><div id="customers" draggable="true" ondragstart="drag(event)">Customers</div>
+                        <div id="orders" draggable="true" ondragstart="drag(event)">Orders</div></p>
+                    </div>
+                    <button class="collapsible">Mysql</button>
+                    <div class="content">
+                    <p></p>
+                    </div>
+                    <button class="collapsible">performance_schema</button>
+                    <div class="content">
+                    <p></p>
+                    </div>
+                    
                 </div>
-
-                <button class="collapsible">learn</button>
-                <div class="content">
-                <p><div id="customers" draggable="true" ondragstart="drag(event)">Customers</div>
-                    <div id="orders" draggable="true" ondragstart="drag(event)">Orders</div></p>
-                </div>
-                <button class="collapsible">Mysql</button>
-                <div class="content">
-                <p></p>
-                </div>
-                <button class="collapsible">performance_schema</button>
-                <div class="content">
-                <p></p>
-                </div>
-                <!-- + information_scema <br>
-                - learn <br>
-                <div id="customers" draggable="true" ondragstart="drag(event)">Customers</div>
-                <div id="orders" draggable="true" ondragstart="drag(event)">Orders</div>
-                <br>
-                <input type="checkbox" name="" value=""> OrderID <br>
-                <input type="checkbox" name="" value=""> CustomerID <br>
-                <input type="checkbox" name="" value=""> EmployerID -->
             </div>
         </div>
         <div class="box box3">Visualizer
