@@ -18,6 +18,7 @@ function allowDrop(ev) {
     +
     '<select>' +
           '<option>' + 'CustomerId' +'</option>' +
+          '<option>' + 'OrderID' +'</option>' +
     '</select>' +
     '</div>'
    
@@ -35,6 +36,7 @@ function allowDrop(ev) {
     +
     '<select>' +
           '<option>' + 'Accending' +'</option>' +
+          '<option>' + 'Decending' +'</option>' +
     '</select>' +
      '</div>'
    
@@ -52,6 +54,7 @@ function allowDrop(ev) {
     
     '<select>' +
           '<option>' + 'CSV' +'</option>' +
+          '<option>' + 'MySQL' +'</option>' +
     '</select>' +'</div>'
    
     $("#output").click(function(){
@@ -61,3 +64,48 @@ function allowDrop(ev) {
         $("#visualizer").append(outputHtml);
     });
   });
+// onclick mysql
+$(document).ready(function(){
+  let mysql = '<form id="form">' +
+  '<br>' +
+  '<input type="text" name="root" placeholder="root"><br>'+
+  '<br>'+
+  '<input type="password" name="password" placeholder="password">'+
+  '<br>'+
+  '<input type="text" name="localhost" placeholder="localhost"><br>'+
+  '<br>'+
+  '<button type="submit" form="form1" value="Submit">Submit</button>'+
+'</form>'
+ 
+  $("#mysql").click(function(){
+      $("form").remove();
+      $("#fil").empty();
+      $("#selectformat").append(mysql);
+  });
+});
+//onclick cvc
+$(document).ready(function(){
+  let csv = 'Select files: <input type="file" name="myFile" multiple><br><br>'+
+  '<input type="submit">'
+ 
+  $("#csv").click(function(){
+      $("form").remove();
+      $("#fil").empty();
+      $("#fil").append(csv);
+  });
+});
+//colapse
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}

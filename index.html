@@ -12,8 +12,9 @@
     <div class="container main">
         <div class="box0"><h2>DATA Analyzer</h2></div>
         <div class="box box1">1.Select Format
-            <div id="selectformat"><input type="checkbox" name="mysql" value=""> MySQL<br>
-                <form>
+            <div id="selectformat">
+                <input id="mysql" type="checkbox" name="mysql" value=""> MySQL<br>
+                <!-- <form>
                         <br>
                         <input type="text" name="root" placeholder="root"><br>
                         <br>
@@ -22,12 +23,17 @@
                         <input type="text" name="localhost" placeholder="localhost"><br>
                         <br>
                         <button type="submit" form="form1" value="Submit">Submit</button>
-                      </form>
-                      <input type="checkbox" name="csv" value=""> CSV
+                      </form> -->
+                <input id="csv" type="checkbox" name="csv" value=""> CSV <br>
+                <div id="fil">
+                    
+                </div>
             </div>
         </div>
         <div class="box box2">2.Select Source
             <div id="selectsource"><span>MySQL</span>  <span>CSV</span><br>
+                + information_scema <br>
+                - learn <br>
                 <div id="customers" draggable="true" ondragstart="drag(event)">Customers</div>
                 <div id="orders" draggable="true" ondragstart="drag(event)">Orders</div>
                 <br>
