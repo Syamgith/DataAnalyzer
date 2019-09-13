@@ -122,6 +122,5 @@ $(document).ready(function(){
   $("#ms").click(function(){
 
       $("#innermysql").show();
-    
   });
 });

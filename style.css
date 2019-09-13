@@ -153,6 +153,14 @@ h2 {
     overflow: hidden;
     background-color: #f1f1f1;
   }
-  #ms, #cs {
+  #ms {
       cursor: pointer;
+      margin-left: 43px;
   }
+  #cs {
+      cursor: pointer;
+      margin-left: 80px;
+  }
+#innermysql {
+    display: none;
+}
