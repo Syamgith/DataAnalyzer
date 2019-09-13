@@ -7,10 +7,23 @@
     <title>Data Analyzer</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
     <div class="container main">
-        <div class="box0"><h2>DATA Analyzer</h2></div>
+            <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
+                    <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+                    
+                  </div>
+                  
+                  <div class="w3-teal" id="newtitle">
+                    <button id="newbutton" class="w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()">&#9776;Result</button>
+                    <div class="w3-container">
+                      <h1>Data Analyzer</h1>
+                    </div>
+                  </div>
+        </div>
+        <div class="w3-container">
         <div class="box box1">1.Select Format
             <div id="selectformat">
                 <input id="mysql" type="checkbox" name="mysql" value=""> MySQL<br>
@@ -24,32 +37,32 @@
         <div class="box box2">2.Select Source
             <div id="selectsource"><span id="ms">MySQL  </span>  <span id="cs">CSV</span><br>
                 <div id="innermysql">
-                    <button class="collapsible">information_schema</button>
+                    <!-- <button class="collapsible">information_schema</button>
                     <div class="content">
                     <p></p>
-                    </div>
+                    </div> -->
 
                     <button class="collapsible">learn</button>
                     <div class="content">
-                    <p><div id="customers" draggable="true" ondragstart="drag(event)">Customers</div>
-                        <div id="orders" draggable="true" ondragstart="drag(event)">Orders</div></p>
+                    <p><div id="customers" class="drag" draggable="true" ondragstart="drag(event)">Customers</div>
+                        <div id="orders" class="drag" draggable="true" ondragstart="drag(event)">Orders</div></p>
                     </div>
-                    <button class="collapsible">Mysql</button>
+                    <!-- <button class="collapsible">Mysql</button>
                     <div class="content">
                     <p></p>
                     </div>
                     <button class="collapsible">performance_schema</button>
                     <div class="content">
                     <p></p>
-                    </div>
+                    </div> -->
                     
                 </div>
             </div>
         </div>
         <div class="box box3">Visualizer
             <div id="visualizer">
-                <div id="vcustomers" ondrop="drop(event)" ondragover="allowDrop(event)">Customers</div>
-                <div id="vorders" ondrop="drop(event)" ondragover="allowDrop(event)">Orders</div>
+                <div id="vcustomers" class="drop" ondrop="drop(event)" ondragover="allowDrop(event)">Customers</div>
+                <div id="vorders" class="drop" ondrop="drop(event)" ondragover="allowDrop(event)">Orders</div>
                 <div class="operations">
                     <div id="join">Join</div>
                     <div id="tranform">Transform</div>
@@ -58,6 +71,7 @@
                 
                 <div id="map">Run the Maping</div>
             </div>
+        </div>
         </div>
     </div>
 

@@ -1,3 +1,32 @@
+// (function($,undefined){
+//   // set up background images
+//   $('.drag').each(function(i,o){
+//       $(o).css('background-image', 'url(' + $(o).data('src') + ')');
+//   });
+  
+  
+//   $('.drag').draggable({
+//       cancel: "a.ui-icon", // clicking an icon won't initiate dragging
+//       //revert: "invalid", // when not dropped, the item will revert back to its initial position
+//       revert: true, // bounce back when dropped
+//       helper: "clone", // create "copy" with original properties, but not a true clone
+//       cursor: "move"
+//       , revertDuration: 0 // immediate snap
+//   });
+  
+//   var $container
+//   $('.drop').droppable({
+//       accept: ".drag",
+//       activeClass: "ui-state-highlight",
+//       drop: function( event, ui ) {
+//           // clone item to retain in original "list"
+//           var $item = ui.draggable.clone();
+
+//           $(this).addClass('has-drop').html($item);
+
+//       }
+//   });
+// });
 function allowDrop(ev) {
     ev.preventDefault();
   }
@@ -12,6 +41,7 @@ function allowDrop(ev) {
     
     ev.target.appendChild(document.getElementById(data));
   }
+  
   $(document).ready(function(){
     let joinHtml = '<div id="joinclick">' +
     'Verify the primary key for joining'
@@ -124,3 +154,11 @@ $(document).ready(function(){
       $("#innermysql").show();
   });
 });
+//sidepanel
+function openRightMenu() {
+  document.getElementById("rightMenu").style.display = "block";
+}
+
+function closeRightMenu() {
+  document.getElementById("rightMenu").style.display = "none";
+}

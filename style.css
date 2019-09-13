@@ -25,17 +25,17 @@ h2 {
 }
 .box.box2 {
     position: absolute;
-    margin-left: 300px;
+    margin-left: 312px;
     height: 500px;
     width: 250px;
-    top: 85px;
+    top: 155px;
 }
 .box.box3 {
     position: absolute;
-    margin-left: 580px;
+    margin-left: 620px;
     height: 500px;
     width: 225px;
-    top: 80px;
+    top: 144px;
 }
 #selectformat {
     position: relative;
@@ -46,7 +46,7 @@ h2 {
 #selectsource {
     position: relative;
     height: 500px;
-    width: 255px;
+    width: 283px;
     background-color:  rgb(235, 235, 235);
 }
 #visualizer {
@@ -163,4 +163,22 @@ h2 {
   }
 #innermysql {
     display: none;
+}
+/* sidepanel */
+#newtitle {
+    color: #fff!important;
+    background-color: #000000!important;
+    width: 127%;
+}
+#newbutton {
+    color: #fff!important;
+    background-color: royalblue!important;
+}
+#rightMenu {
+    height: 100%;
+    width: 50%;
+    background-color: #fff;
+    position: fixed!important;
+    z-index: 1;
+    overflow: auto;
 }
