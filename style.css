@@ -8,12 +8,6 @@
     top: 40px;
     left: 5px;
 }
-.box0 {
-    position: relative;
-    height: 45px;
-    width: 1500px;
-    background-color: black;
-}
 h2 {
     color: white;
     margin-left: 5%;
@@ -172,11 +166,12 @@ h2 {
 }
 #newbutton {
     color: #fff!important;
-    background-color: royalblue!important;
+    background-color: rgb(16, 46, 134)!important;
+    margin-top: 0px;
 }
 #rightMenu {
     height: 100%;
-    width: 50%;
+    width: 75%;
     background-color: #fff;
     position: fixed!important;
     z-index: 1;
