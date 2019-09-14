@@ -167,7 +167,10 @@ h2 {
 #newbutton {
     color: #fff!important;
     background-color: rgb(16, 46, 134)!important;
-    margin-top: 0px;
+    margin-top: 4px;
+    margin-left: 86%;
+    height: 50px;
+    width: 130px;
 }
 #rightMenu {
     height: 100%;
