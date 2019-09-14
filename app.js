@@ -1,32 +1,27 @@
-// (function($,undefined){
-//   // set up background images
-//   $('.drag').each(function(i,o){
-//       $(o).css('background-image', 'url(' + $(o).data('src') + ')');
-//   });
-  
-  
-//   $('.drag').draggable({
-//       cancel: "a.ui-icon", // clicking an icon won't initiate dragging
-//       //revert: "invalid", // when not dropped, the item will revert back to its initial position
-//       revert: true, // bounce back when dropped
-//       helper: "clone", // create "copy" with original properties, but not a true clone
-//       cursor: "move"
-//       , revertDuration: 0 // immediate snap
-//   });
-  
-//   var $container
-//   $('.drop').droppable({
-//       accept: ".drag",
-//       activeClass: "ui-state-highlight",
-//       drop: function( event, ui ) {
-//           // clone item to retain in original "list"
-//           var $item = ui.draggable.clone();
+//csv on click
+$(document).ready(function(){
+  $("#cs").click(function(){
 
-//           $(this).addClass('has-drop').html($item);
+      $("#innermysql").hide();
+    
+  });
+});
+//mysql onclick
+$(document).ready(function(){
+  $("#ms").click(function(){
 
-//       }
-//   });
-// });
+      $("#innermysql").show();
+  });
+});
+//sidepanel
+function openRightMenu() {
+  document.getElementById("rightMenu").style.display = "block";
+}
+
+function closeRightMenu() {
+  document.getElementById("rightMenu").style.display = "none";
+}
+//
 function allowDrop(ev) {
     ev.preventDefault();
   }
@@ -138,27 +133,4 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "block";
     }
   });
-}
-//csv on click
-$(document).ready(function(){
-  $("#cs").click(function(){
-
-      $("#innermysql").hide();
-    
-  });
-});
-//mysql onclick
-$(document).ready(function(){
-  $("#ms").click(function(){
-
-      $("#innermysql").show();
-  });
-});
-//sidepanel
-function openRightMenu() {
-  document.getElementById("rightMenu").style.display = "block";
-}
-
-function closeRightMenu() {
-  document.getElementById("rightMenu").style.display = "none";
 }
